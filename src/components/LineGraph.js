@@ -29,48 +29,46 @@ const LineGraph = ({ data }) => {
   ];
 
   return (
-    <>
-      <Box sx={{ height: 650, width: 800 }}>
-        <ResponsiveLine
-          data={lines}
-          margin={{ top: 100, right: 100, bottom: 150, left: 200 }}
-          axisLeft={{
-            orient: "left",
-            legend: "Score",
-            tickSize: 5,
-            tickRotation: 20,
-            legendPosition: "middle",
-            legendOffset: -40,
-          }}
-          axisBottom={{
-            orient: "bottom",
-            legend: "Visit Date & Time",
-            tickSize: 5,
-            tickRotation: 20,
-            legendPosition: "middle",
-            legendOffset: 75,
-          }}
-          pointSize={15}
-          legends={[
-            {
-              anchor: "bottom-right",
-              direction: "column",
-              justify: false,
-              translateX: 100,
-              translateY: 0,
-              itemsSpacing: 0,
-              itemDirection: "left-to-right",
-              itemWidth: 80,
-              itemHeight: 20,
-              itemOpacity: 0.75,
-              symbolSize: 12,
-              symbolShape: "circle",
-              symbolBorderColor: "rgba(0, 0, 0, .5)",
-            },
-          ]}
-        />
-      </Box>
-    </>
+    <Box sx={{ height: 650, width: 800 }}>
+      <ResponsiveLine
+        data={lines}
+        margin={{ top: 100, right: 100, bottom: 150, left: 100 }}
+        axisLeft={{
+          orient: "left",
+          legend: "Score",
+          tickSize: 5,
+          tickRotation: 20,
+          legendPosition: "middle",
+          legendOffset: -40,
+        }}
+        axisBottom={{
+          orient: "bottom",
+          legend: "Visit Date & Time",
+          tickSize: 5,
+          tickRotation: 20,
+          legendPosition: "middle",
+          legendOffset: 75,
+        }}
+        pointSize={15}
+        legends={[
+          {
+            anchor: "bottom-right",
+            direction: "column",
+            justify: false,
+            translateX: 100,
+            translateY: 0,
+            itemsSpacing: 0,
+            itemDirection: "left-to-right",
+            itemWidth: 80,
+            itemHeight: 20,
+            itemOpacity: 0.75,
+            symbolSize: 12,
+            symbolShape: "circle",
+            symbolBorderColor: "rgba(0, 0, 0, .5)",
+          },
+        ]}
+      />
+    </Box>
   );
 };
 
