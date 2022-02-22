@@ -15,6 +15,9 @@ const theme = createTheme({
     h1: {
       fontSize: 24,
     },
+    h3: {
+      fontSize: 18,
+    },
   },
 });
 
@@ -28,12 +31,15 @@ function App() {
       <div className="header">
         <ThemeProvider theme={theme}>
           <Typography variant="h1" gutterBottom>
-            Prairie Health's Mental Health Score Evaluation
+            Prairie Health
+          </Typography>
+          <Typography variant="h3" gutterBottom>
+            Mental Health Score Data Visualizer
           </Typography>
         </ThemeProvider>
       </div>
       <div className="displays">
-        <Box sx={{ display: 'flex', flexDirection: {xs: 'column', md:'row'}, marginLeft: 10}}>
+        <Box sx={{ display: 'flex', flexDirection: {xs: 'column', md:'row'}, marginLeft: 10, marginBottom: 20}}>
           <Paper>
             <Grid direction="row">
               <Grid>

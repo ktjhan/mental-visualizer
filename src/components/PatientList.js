@@ -23,7 +23,7 @@ const PatientList = ({ patients, setSelectPatient }) => {
   return (
     <Box>
       <ThemeProvider theme={theme}>
-        <Typography variant="h5">Patient(s)</Typography>
+        <Typography variant="h5" align="center">Patient(s)</Typography>
       </ThemeProvider>
       <List>
         {patients.map((patient, index) => {
