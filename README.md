@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# MENTAL HEALTH VISUALIZER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project uses React to outline a patient's psychiatric score.
 
 ## Available Scripts
 
